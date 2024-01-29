@@ -15,9 +15,9 @@ jobs:
           #   lisp: sbcl-bin
           - os: windows-latest
             lisp: sbcl-bin
-    defaults:
-      run:
-        shell: lispsh {0}
+    # defaults:
+    #   run:
+    #     shell: lispsh {0}
     env:
       LISP: ${{ matrix.lisp }}
     name: test with ${{ matrix.lisp }} on ${{ matrix.os }}
